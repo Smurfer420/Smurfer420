@@ -7,7 +7,7 @@
 
 - 👯 I’m looking to collaborate on **a big project**
 
-- 👨‍💻 All of my projects are available at [Smurfer.site or my repos](Smurfer.site or my repos)
+- 👨‍💻 All of my projects are available at [Smurfer.site](Smurfer.site) or my repos
 
 - 💬 Ask me about **anything you want**
 
