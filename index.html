@@ -7,15 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<form id="contact">
+    <input name="name" placeholder="Name">
 
-    <div class="container">
-        <h1>About Me</h1>
+    <textarea name="message"
+        placeholder="Message"></textarea>
 
-        <div class="content">
-            <!-- Add your information here -->
-        </div>
-    </div>
+    <input
+        name="website"
+        style="display:none"
+        tabindex="-1"
+        autocomplete="off">
 
-    <script src="script.js"></script>
+    <button>
+        Send
+    </button>
+</form>
+<script src="script.js"></script>
 </body>
 </html>
