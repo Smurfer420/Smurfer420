@@ -7,7 +7,7 @@ document
     const form = new FormData(e.target);
 
     const response = await fetch(
-        "contact.smurfer42.workers.dev",
+        "https://contact.smurfer42.workers.dev",
         {
             method: "POST",
             headers: {
