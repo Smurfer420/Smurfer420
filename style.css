@@ -1,33 +1,170 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    min-height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #1e40af
+        );
 }
 
-.container {
+
+.card {
     width: 90%;
-    max-width: 600px;
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+
+    padding: 35px;
+
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(15px);
+
+    border-radius: 20px;
+
+    color: white;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.3);
+
+    animation: fade .6s ease;
 }
+
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
+    margin-top:0;
 }
 
-.content {
-    min-height: 200px;
+
+input,
+textarea {
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:14px;
+
+    border:none;
+    outline:none;
+
+    border-radius:10px;
+
+    background:white;
+
+    font-size:16px;
+}
+
+
+textarea {
+    height:130px;
+    resize:none;
+}
+
+
+button {
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#00ffff;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+
+button:hover {
+    transform:translateY(-2px);
+}
+
+
+button:disabled {
+    opacity:.6;
+    cursor:not-allowed;
+}
+
+
+/* Loading circle */
+
+.loader {
+
+    display:none;
+
+    width:20px;
+    height:20px;
+
+    border:3px solid rgba(0,0,0,.2);
+
+    border-top:3px solid black;
+
+    border-radius:50%;
+
+    animation:spin .8s linear infinite;
+
+    margin:auto;
+}
+
+
+.loading .loader {
+    display:block;
+}
+
+
+.loading #text {
+    display:none;
+}
+
+
+
+#status {
+
+    text-align:center;
+
+    margin-top:15px;
+
+}
+
+
+@keyframes spin {
+
+    to {
+        transform:rotate(360deg);
+    }
+
+}
+
+
+@keyframes fade {
+
+    from {
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to {
+        opacity:1;
+        transform:none;
+    }
+
 }
