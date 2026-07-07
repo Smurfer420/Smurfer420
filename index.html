@@ -6,23 +6,47 @@
     <title>About Me</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<form id="contact">
-    <input name="name" placeholder="Name">
 
-    <textarea name="message"
-        placeholder="Message"></textarea>
+<div class="card">
+    <h1>Contact Me</h1>
+    <p>Send me a message and I'll get back to you.</p>
 
-    <input
-        name="website"
-        style="display:none"
-        tabindex="-1"
-        autocomplete="off">
+    <form id="contact">
 
-    <button>
-        Send
-    </button>
-</form>
+        <input 
+            name="name" 
+            placeholder="Your name"
+            required
+        >
+
+        <textarea
+            name="message"
+            placeholder="Your message"
+            required
+        ></textarea>
+
+        <!-- Anti spam -->
+        <input
+            name="website"
+            style="display:none"
+            tabindex="-1"
+            autocomplete="off"
+        >
+
+        <button id="send">
+            <span id="text">Send</span>
+            <div class="loader"></div>
+        </button>
+
+        <div id="status"></div>
+
+    </form>
+</div>
+
+
 <script src="script.js"></script>
+
 </body>
 </html>
