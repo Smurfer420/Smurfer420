@@ -1,49 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smurfer | Contact</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<div class="card">
-    <h1>Contact Me</h1>
-    <p>Send me a message and I'll get back to you.</p>
 
-    <form id="contact">
+<div class="background"></div>
 
-        <input 
-            name="name" 
-            placeholder="Your name"
-            required
-        >
 
-        <textarea
-            name="message"
-            placeholder="Your message"
-            required
-        ></textarea>
+<main class="container">
 
-        <!-- Anti spam -->
-        <input
-            name="website"
-            style="display:none"
-            tabindex="-1"
-            autocomplete="off"
-        >
 
-        <button id="send">
-            <span id="text">Send</span>
-            <div class="loader"></div>
-        </button>
+<section class="hero">
 
-        <div id="status"></div>
-
-    </form>
+<div class="avatar">
+    S
 </div>
+
+<h1>
+    Smurfer
+</h1>
+
+<p>
+    Developer • Builder • Creator
+</p>
+
+<div class="links">
+
+<a href="https://github.com/smurfer420">
+GitHub
+</a>
+
+</div>
+
+</section>
+
+
+
+<section class="card">
+
+<h2>
+    Contact Me
+</h2>
+
+<p class="subtitle">
+Have an idea or want to collaborate?
+</p>
+
+
+<form id="contact">
+
+
+<input
+name="name"
+placeholder="Your name"
+required
+>
+
+
+<textarea
+name="message"
+placeholder="Write your message..."
+required
+></textarea>
+
+
+
+<input
+name="website"
+style="display:none"
+autocomplete="off"
+>
+
+
+<button id="send">
+
+<span id="text">
+Send Message
+</span>
+
+<div class="loader"></div>
+
+</button>
+
+
+<p id="status"></p>
+
+
+</form>
+
+</section>
+
+
+</main>
 
 
 <script src="script.js"></script>
